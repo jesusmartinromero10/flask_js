@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/pico.css">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <script src="/static/js/spa.js"></script>
+    <title>Gestion de cuentas</title>
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+        Mini Kakebo
+        </div>
+    </header>
+    <section class="container">
+        <h1>Gestion de gastos e Ingresos</h1>
+        <nav>
+            <ul></ul>
+            <ul>
+                <li><a href="#" role="button" id="btn_crear">Nuevo</a></li>
+            </ul>
+        </nav>
+        <div id="moviments_list">
+            <table id="movements_table">
+                <tr>
+                    <th>Fecha</th>
+                    <th>Concepto</th>
+                    <th>Cantidad</th>
+                    
+                </tr>
+            </table>
+        </div>
+        <article id="movements_detail" class="inactive">
+            <form id="movements_form">
+                <input type="date" name="date" id="date">
+                <input type="text" id="concept" name="concept" placeholder="Concepto del movimiento">
+                <input type="numbre" id="quantity" name="quantity" step="0.01" placeholder="Cuanto has gastado o ganado">
+                
+                <div class="grid">
+                    <button id="btn_cerrar">Cerrar</button>
+                    <button id="btn_borrar">Borrar</button>
+                    <button id="btn_modificar">Modificar</button>
+
+                </div>
+                
+            </form>
+        </article>
+    </section>
+    <footer>
+        <div class="container">
+        &copy; 2022 -JMR
+        </div>
+    </footer>
+</body>
+</html>
